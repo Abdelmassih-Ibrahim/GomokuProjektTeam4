@@ -43,4 +43,3 @@ Spelaren ska kunna frtsätta en match efter att internet har försvunnit.
 # Förväntat resultat:
 Spelaren kommer tillbaka till samma match och kan fortsätta spela. om spelaren inte kommer tillbaka i tid avslutas matchen 
 
-Relevant GDPR-krav: Security Measures (Art. 32) – Systemet ska implementera lämpliga säkerhetsåtgärder, inklusive autentisering, för att säkerställa att endast rätt spelare kan återansluta till en pausad match.
