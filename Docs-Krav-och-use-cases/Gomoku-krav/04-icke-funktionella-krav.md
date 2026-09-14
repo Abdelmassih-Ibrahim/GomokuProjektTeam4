@@ -7,7 +7,7 @@ Vilka egenskaper ett system behöver ha är väldigt viktigt för användarupple
 |-------|-------|
 |NFR-01| Användarvänlighet: Spelet ska vara enkelt att förstå och använda även för en person utan teknisk kunskap|  
 |NFR-02| Responsiv design:	Spelplan, knappar och information ska fungera och anpassas till mobil och dator.  |
-|NFR-03| Prestanda: Spelet ska reagera snabbt på spelarens drag och inte kännas segt. |
+|NFR-03| Prestanda: Efter att användaren klickar på en giltig position ska stenen visas inom 100 ms under normal användning. |
 |NFR-04| Anonym användning: Användaren ska kunna spela utan att skapa konto eller logga in. |
 |NFR-05| Kompatibilitet: Spelet ska fungera på mobil och dator direkt i webbläsaren utan installation.|
 |NFR-06| Anslutning via länk: Två spelare ska kunna spela tillsammans från samma eller olika platser.|
