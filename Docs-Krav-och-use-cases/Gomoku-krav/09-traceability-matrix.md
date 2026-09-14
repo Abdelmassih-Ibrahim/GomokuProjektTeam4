@@ -121,4 +121,20 @@
 | NFR-14 | Kunna spela i webbläsare |  |
 | NFR-15 | Kunna användas på olika enheter |  |
 
+## Användningsfall ---> Icke-funktionella krav
+
+| UC-ID | Användningsfall | Förverkligad av NFR |
+|-------|-----------------|---------------------|
+| UC-01 | Starta en match | NFR-01, NFR-03 |
+| UC-02 | Spel mot datorns AI | NFR-01, NFR-03 |
+| UC-03 | Välja svårighetsgrad | NFR-01 |
+| UC-04 | Spela anonymt utan konto | NFR-04, NFR-08 |
+| UC-05 | Hantera cookies | NFR-05, NFR-08 |
+| UC-06 | Bjud in vän via länk | NFR-06, NFR-08 |
+| UC-07 | Anslut till match via länk | NFR-01, NFR-05, NFR-06, NFR-08 |
+| UC-08 | ... | |
+| UC-09 | Återuppta sparad match | NFR-01, NFR-03 |
+| UC-10 | Se matchresultat | NFR-01, NFR-03, NFR-10 |
+| UC-11 | Fortsätta efter internetavbrott | NFR-03, NFR-07, NFR-08 |
+| UC-12 | Spela på samma plan som vän | NFR-01, NFR-02 |
 
