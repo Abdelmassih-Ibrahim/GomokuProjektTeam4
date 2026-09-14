@@ -1,7 +1,7 @@
 # Acceptanstester – Gomoku
 
-**Testare:** _______________________________
-**Datum:** _______________________________
+**Testare:** Abdelmassih Ibrahim
+**Datum:** 2026-09-14
 
 ## AC-01 – Starta spel
 
@@ -19,7 +19,7 @@ Spelet startar och användaren kan göra ett drag utan att skapa konto eller log
 
 **Resultat:** ☑ GODKÄND ☐ EJ GODKÄND
 
-**Bevis:** Lägg in skärmbild här.
+**Bevis:** ![alt text](<Bevis 1.PNG>)
 
 ---
 
