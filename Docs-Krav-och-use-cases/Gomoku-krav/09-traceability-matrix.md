@@ -138,3 +138,33 @@
 | UC-11 | Fortsätta efter internetavbrott | NFR-03, NFR-07, NFR-08 |
 | UC-12 | Spela på samma plan som vän | NFR-01, NFR-02 |
 
+## Test case ---> Användningsfall
+
+| TC-ID | Test case | Förverkligad av UC |
+|-------|-----------|--------------------|
+| TC-01 | Starta en match | UC-01 |
+| TC-02 | Spela mot datorns AI | UC-02 |
+| TC-03 | Hantera ogiltigt drag | UC-02 |
+| TC-04 | Spela på sin tur | UC-02, UC-07 |
+| TC-05 | Fem i rad horisontellt | UC-02, UC-10 |
+| TC-06 | Fem i rad vertikalt | UC-02, UC-10 |
+| TC-07 | Fem i rad diagonalt | UC-02, UC-10 |
+| TC-08 | Inga drag efter vinst | UC-10 |
+| TC-09 | Oavgjort | UC-10 |
+| TC-10 | Starta ny match | UC-10 |
+| TC-11 | Välj svårighetsgrad | UC-03 |
+| TC-12 | Spela anonymt | UC-04 |
+| TC-13 | Hantera cookies | UC-05 |
+| TC-14 | Skapa och kopiera spellänk | UC-06 |
+| TC-15 | Ansluta till match via länk | UC-07 |
+| TC-16 | Hantera anslutning till ogiltig match | UC-07 |
+| TC-17 | Spela hot-seat multiplayer | UC-12 |
+| TC-18 | Bevara matchens state | UC-09, UC-12 |
+| TC-19 | Hantera tillfälligt internetavbrott | UC-11 |
+| TC-20 | Samma state hos båda onlinespelarna | UC-12 |
+| TC-21 | Responsiv design | Saknas |
+| TC-22 | Spela via webbläsare | Saknas |
+| TC-23 | Visuell stabilitet | Saknas |
+| TC-24 | Ingen personlig information vid anslutning via spellänk | Saknas |
+
+
