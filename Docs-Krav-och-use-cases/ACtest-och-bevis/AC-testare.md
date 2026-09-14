@@ -41,8 +41,8 @@ Datorn gör automatiskt sitt drag och spelet fortsätter.
 
 **Resultat:** ☑ GODKÄND ☐ EJ GODKÄND
 
-**Bevis:** Lägg in skärmbild/video här.
-
+**Bevis:** 
+<img src="Mot-dator-vinst.PNG" width="300">
 ---
 
 ## AC-03 – Svårighetsgrad
@@ -60,7 +60,10 @@ Användaren kan välja mellan Easy, Medium och Hard.
 
 **Resultat:** ☑ GODKÄND ☐ EJ GODKÄND
 
-**Bevis:** Lägg in skärmbild här.
+**Bevis:** 
+<img src="lätt-mot-dator.PNG" width="200">
+<img src="medel.PNG" width="200">
+<img src="svår.PNG" width="200">
 
 ---
 
