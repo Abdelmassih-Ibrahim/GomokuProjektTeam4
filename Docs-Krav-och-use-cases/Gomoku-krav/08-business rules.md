@@ -22,7 +22,7 @@ Nedan finns regler och villkor som systemet alltid ska följa under en Gomoku ma
 | ID | Regler |
 |-------|-------|
 |BR-8|Endast när det är spelarens tur som hen får göra ett drag|
-|BR-0|Spelarna ska alltid turas om att göra ett drag |
+|BR-9|Spelarna ska alltid turas om att göra ett drag |
 |BR-10|När ett giltigt drag blir gjort så¨ska turen alltid gå vidaren till motståndaren, om matchen inte har avslutats. |
 |BR-11|Ett ogiltigt drag av en spelare får inte ändra turordningen|
 

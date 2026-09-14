@@ -14,20 +14,19 @@ Vilka egenskaper ett system behöver ha är väldigt viktigt för användarupple
 |NFR-07| Tillförlitlighet: Spelet ska kunna hantera tillfälligt internetavbrott utan att matchen förloras |
 |NFR-08| Säkerhet och integritet: Personlig information ska inte krävas för att spela och ska inte finnas i inbjudningslänken. |
 |NFR-09| Visuell/UI-stabilitet: Spelplanens storlek, position och även rutornas dimensioner ska fortsätta vara oförändrade när en sten placeras. Placera flera stenar och kontrollera att brädet inte krymper, flyttar sig eller ändrar storlek. |
-|NFR-10| Säkerhet och integritet: En spelare ska kunna delta i en match utan att behöva lämna sina personuppgifter för att spela. |
-|NFR-11|Brädans tillstånd ska vara konsekvent för båda spelarna i en match som sker på distans.|
+|NFR-10|Brädans tillstånd ska vara konsekvent för båda spelarna i en match som sker på distans.|
 
 ## Internetavbrott 
 | ID | KRAV |
 |-------|-------|
-|NFR-12| Ett tillfälligt internetavbrott ska inte automatiskt avsluta en pågående match som sker på distans mellan två spelare|
-|NFR-13|När spelaren återansluter ska systemet alltid återställa den senaste giltiga spelstatus, tillstånd och turordning. (Om motståndaren inte har valt att avsluta matchen) |
+|NFR-11| Ett tillfälligt internetavbrott ska inte automatiskt avsluta en pågående match som sker på distans mellan två spelare|
+|NFR-12|När spelaren återansluter ska systemet alltid återställa den senaste giltiga spelstatus, tillstånd och turordning. (Om motståndaren inte har valt att avsluta matchen) |
 
 ## Anonymt spelande 
 | ID | KRAV |
 |-------|-------|
-|NFR-14|Spelet ska alltid kunna användas direkt i en webbläsare utan att spelaren behöver installera något program|
-|NFR-15|Spelet ska kunna användas på både datorer och mobiltelefoner|
+|NFR-13|Spelet ska alltid kunna användas direkt i en webbläsare utan att spelaren behöver installera något program|
+|NFR-14|Spelet ska kunna användas på både datorer och mobiltelefoner|
 
 ```mermaid
 flowchart TD
@@ -45,18 +44,17 @@ flowchart TD
     B --> NFR07["NFR-07<br/>Tillförlitlighet"]
     B --> NFR08["NFR-08<br/>Säkerhet och integritet"]
     B --> NFR09["NFR-09<br/>Visuell stabilitet"]
-    B --> NFR10["NFR-10<br/>Säkerhet och integritet"]
-    B --> NFR11["NFR-11<br/>Konsekvent brädstatus"]
+    B --> NFR11["NFR-10<br/>Konsekvent brädstatus"]
 
     A --> C["Internetavbrott"]
 
-    C --> NFR12["NFR-12<br/>Tillfälligt internetavbrott ska inte automatiskt avsluta matchen"]
-    C --> NFR13["NFR-13<br/>Senaste giltiga spelstatus, tillstånd och turordning återställs vid återanslutning"]
+    C --> NFR12["NFR-11<br/>Tillfälligt internetavbrott ska inte automatiskt avsluta matchen"]
+    C --> NFR13["NFR-12<br/>Senaste giltiga spelstatus, tillstånd och turordning återställs vid återanslutning"]
 
     A --> D["Anonymt spelande"]
 
-    D --> NFR14["NFR-14<br/>Spelet fungerar direkt i webbläsaren utan installation"]
-    D --> NFR15["NFR-15<br/>Spelet fungerar på datorer och mobiltelefoner"]
+    D --> NFR14["NFR-13<br/>Spelet fungerar direkt i webbläsaren utan installation"]
+    D --> NFR15["NFR-14<br/>Spelet fungerar på datorer och mobiltelefoner"]
 
     NFR01 --> T01["Enkel att förstå och använda"]
     NFR02 --> T02["Anpassas till mobil och dator"]
@@ -67,14 +65,13 @@ flowchart TD
     NFR07 --> T07["Matchen förloras inte vid tillfälligt internetavbrott"]
     NFR08 --> T08["Ingen personlig information krävs"]
     NFR09 --> T09["Spelplanens storlek och position är oförändrad"]
-    NFR10 --> T10["Spelaren kan delta utan personuppgifter"]
-    NFR11 --> T11["Samma brädstatus för båda spelarna"]
+    NFR10 --> T11["Samma brädstatus för båda spelarna"]
 
-    NFR12 --> T12["Matchen fortsätter efter tillfälligt avbrott"]
-    NFR13 --> T13["Matchens senaste giltiga tillstånd återställs"]
+    NFR11 --> T12["Matchen fortsätter efter tillfälligt avbrott"]
+    NFR12 --> T13["Matchens senaste giltiga tillstånd återställs"]
 
-    NFR14 --> T14["Ingen programinstallation krävs"]
-    NFR15 --> T15["Fungerar på både dator och mobil"]
+    NFR13 --> T14["Ingen programinstallation krävs"]
+    NFR14 --> T15["Fungerar på både dator och mobil"]
 
     style A font-weight:bold
     style B font-weight:bold
