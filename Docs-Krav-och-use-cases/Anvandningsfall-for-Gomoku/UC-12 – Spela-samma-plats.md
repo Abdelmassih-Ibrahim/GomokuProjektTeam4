@@ -2,7 +2,7 @@
 
 | Fält              | Värden                         |
 |-------------------|--------------------------------|
-| Use Case ID       | UC-13                         |
+| Use Case ID       | UC-13                        |
 | Namn              | Spela på samma plats. |
 | Version           | 1.0                            |
 | Preliminär Aktör  | en spelare |
