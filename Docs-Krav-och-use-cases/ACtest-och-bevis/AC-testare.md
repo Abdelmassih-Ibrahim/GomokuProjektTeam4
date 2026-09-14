@@ -115,7 +115,6 @@ Spelet upptäcker fem i rad, avslutar matchen och visar vinnaren.
 **Resultat:** ☑ GODKÄND ☐ EJ GODKÄND
 
 **Bevis:** 
-
 <img src="Vertikal.PNG" width="200">
 <img src="diagonalt.PNG" width="200">
 <img src="Horisontell.PNG" width="200">
