@@ -22,7 +22,7 @@ Spelet startar och användaren kan göra ett drag utan att skapa konto eller log
 
 **Bevis:**
 
-<img src="./Bevis 1.PNG" width="300">![alt text](<Bevis 1.PNG>)
+<img src="./Bevis 1.PNG" width="300">
 
 ---
 
