@@ -18,8 +18,6 @@
 Spelet startar och användaren kan göra ett drag utan att skapa konto eller logga in.
 
 **Resultat:** ☑ GODKÄND ☐ EJ GODKÄND
-
-
 **Bevis:**
 
 <img src="Bevis-1.PNG" width="300">
@@ -65,7 +63,6 @@ Användaren kan välja mellan Easy, Medium och Hard.
 <img src="medel.PNG" width="200">
 <img src="svår.PNG" width="200">
 
----
 
 ## AC-04 – Två spelare på samma plats
 
@@ -83,7 +80,7 @@ Spelarna turas om och kan göra lagliga drag.
 
 **Resultat:** ☑ GODKÄND ☐ EJ GODKÄND
 
-**Bevis:** Lägg in skärmbild här.
+**bevis** <img src="tva-spelare.PNG" width="300">
 
 ## AC-05 – Spela online via länk
 
@@ -101,7 +98,7 @@ Den andra spelaren kan ansluta via länken och båda spelarna ser samma spelplan
 
 **Resultat:** ☑ GODKÄND ☐ EJ GODKÄND
 
-**Bevis:** Lägg in skärmbilder/video här.
+**Bevis:** <img src="online.PNG" width="300">
 
 ## AC-06 – Vinst med fem i rad
 
@@ -117,9 +114,11 @@ Spelet upptäcker fem i rad, avslutar matchen och visar vinnaren.
 
 **Resultat:** ☑ GODKÄND ☐ EJ GODKÄND
 
-**Bevis:** Lägg in skärmbild här.
+**Bevis:** 
 
----
+<img src="Vertikal.PNG" width="200">
+<img src="diagonalt.PNG" width="200">
+<img src="Horisontell.PNG" width="200">
 
 ## AC-07 – Oavgjort spel
 
@@ -134,7 +133,7 @@ Spelet avslutas och visar att matchen blev oavgjord.
 
 **Resultat:** ☑ GODKÄND ☐ EJ GODKÄND
 
-**Bevis:** Lägg in skärmbild här.
+**Bevis** <img src="oavgjort.PNG" width="300">
 
 
 ## AC-08 – Förhindra ogiltiga drag
@@ -151,7 +150,7 @@ Den första markeringen ligger kvar och den andra markeringen placeras inte där
 
 **Resultat:** ☑ GODKÄND ☐ EJ GODKÄND
 
-**Bevis:** Lägg in skärmbild/video här.
+**Bevis:** <img src="olika-platser.PNG" width="300">
 
 ## AC-09 – Spara och återuppta spel
 
@@ -170,7 +169,7 @@ Det pågående spelet kan återupptas med tidigare drag kvar.
 
 **Resultat:** ☑ GODKÄND ☐ EJ GODKÄND
 
-**Bevis:** Lägg in före/efter-skärmbild här.
+**Bevis:** <img src="aterupta.PNG" width="300">
 
 
 ## AC-10 – Internetanslutning
@@ -190,8 +189,8 @@ Matchen avslutas inte automatiskt och spelet kan fortsätta efter återanslutnin
 
 **Resultat:** ☑ GODKÄND ☐ EJ GODKÄND
 
-**Bevis:** Lägg in video/skärmbilder här.
-
+**Bevis:** 
+<img src="aterupta.PNG" width="300">
 ---
 
 ## AC-11 – Mobil användning
@@ -209,7 +208,7 @@ Spelplanen och knapparna fungerar och är användbara på mobilskärmen.
 
 **Resultat:** ☑ GODKÄND ☐ EJ GODKÄND
 
-**Bevis:** Lägg in skärmbild här.
+**Bevis:** <img src="mobil.PNG" width="300">
 
 
 ## AC-12 – Ingen registrering
@@ -227,7 +226,7 @@ Användaren kan spela utan konto eller personuppgifter.
 
 **Resultat:** ☑ GODKÄND ☐ EJ GODKÄND
 
-**Bevis:** Lägg in skärmbild här.
+**Bevis:** <img src="ingen-reg.PNG" width="300">
 
 
 # Sammanfattning
