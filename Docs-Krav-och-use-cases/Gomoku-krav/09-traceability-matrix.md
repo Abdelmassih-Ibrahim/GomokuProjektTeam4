@@ -101,4 +101,24 @@
 | UC-11 | Fortsätta efter internetavbrott | CR-08.1, CR-08.2 |
 | UC-12 | Bevara spelstatus | |
 
+## Icke-funktionella krav ---> Användningsfall
+
+| NFR ID | Icke-funktionella krav (kort) | Förverkligad av UC |
+|--------|-------------------------------|--------------------|
+| NFR-01 | Användarvänlighet             | UC-01, UC-02, UC-03, UC-07, UC-09, UC-10, UC-12 |
+| NFR-02 | Responsiv design              | UC-12 |
+| NFR-03 | Prestanda                     | UC-01, UC-02, UC-09, UC-10, UC-11 |
+| NFR-04 | Anonym användning             | UC-04 |
+| NFR-05 | Kompabilitet                  | UC-05, UC-07 |
+| NFR-06 | Anslutning via länk           | UC-06, UC-07 |
+| NFR-07 | Tillförlitlighet              | UC-11 |
+| NFR-08 | Säkerhet och integritet (inbjudningslänk) | UC-04, UC-05, UC-06, UC-07, UC-11 |
+| NFR-09 | Visuel stabilitet |  |
+| NFR-10 | Säkerhet och integritet (Delta i match) | UC-10 |
+| NFR-11 | Brädans tillstånd |  |
+| NFR-12 | Hantera tillfälligt internetavbrott |  |
+| NFR-13 | Återanslut till match |  |
+| NFR-14 | Kunna spela i webbläsare |  |
+| NFR-15 | Kunna användas på olika enheter |  |
+
 
