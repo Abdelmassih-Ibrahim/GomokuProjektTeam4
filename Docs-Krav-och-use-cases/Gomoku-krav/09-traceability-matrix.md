@@ -167,4 +167,21 @@
 | TC-23 | Visuell stabilitet | Saknas |
 | TC-24 | Ingen personlig information vid anslutning via spellänk | Saknas |
 
+## Användningsfall ---> Test Case
+
+| UC-ID | Användningsfall | Förverkligad av TC |
+|-------|-----------------|--------------------|
+| UC-01 | Starta en match | TC-01 |
+| UC-02 | Spel mot datorns AI | TC-02, TC-03, TC-04, TC-05, TC-06, TC-07 |
+| UC-03 | Välja svårighetsgrad | TC-11 |
+| UC-04 | Spela anonymt utan konto | TC-12 |
+| UC-05 | Hantera cookies | TC-13 |
+| UC-06 | Bjud in vän via länk | TC-14 |
+| UC-07 | Anslut till match via länk | TC-04, TC-15, TC-16 |
+| UC-08 | ... | |
+| UC-09 | Återuppta sparad match | TC-18 |
+| UC-10 | Se matchresultat | TC-05, TC-06, TC-07, TC-08, TC-09, TC-10 |
+| UC-11 | Fortsätta efter internetavbrott | TC-19 |
+| UC-12 | Spela på samma plan som vän | TC-17, TC-18, TC-20 |
+
 
