@@ -43,4 +43,51 @@
 | FR-09.1  | Systemet ska kunna spara ett pågående spel så att spelaren kan fortsätta det senare. |
 | FR-09.2  | Systemet ska kunna återuppta ett tidigare avbrutet spel. |
 
+# BDD-förtydliganden
+
+BDD används här för att förtydliga de kompletterande krav som innehåller större eller flera olika beteenden. Alla krav har inte ett eget BDD-scenario eftersom vissa krav redan är tydliga.
+
+# FR-03 – Välj svårighetsgrad
+
+### Scenario 1: Användaren väljer svårighetsgrad
+- Givet: att användaren har valt att spela mot datorn
+- När: användaren öppnar menyn för svårighetsgrad
+- Så: ska alternativen "Lätt", "Medel" och "Svår" visas
+- Och: användaren ska kunna välja en av svårighetsgraderna
+- Och: spelet ska startas med den valda svårighetsgraden
+
+# FR-04 – Spela anonymt utan konto
+### Scenario 1: Användaren spelar utan konto
+
+- Givet: att användaren öppnar Gomoku
+- När: användaren väljer ett spelläge och startar ett spel
+- Så: ska användaren kunna spela utan att skapa ett konto
+- Och: användaren ska inte behöva logga in
+- Och: användaren ska inte behöva lämna personlig information
+
+# FR-05 – Användaren hanterar Cookies
+### Scenario 1: Användaren nekar cookies
+
+- Givet: att användaren öppnar Gomoku
+- När: information om cookies visas
+- Så: ska användaren kunna neka cookies
+- Och: användaren ska fortfarande kunna spela Gomoku
+
+# FR-08 – Återanslut till spel
+### Scenario 1: Spelaren tappar internetanslutningen
+
+- Givet: att två spelare har en pågående match online
+- När: en spelare tillfälligt tappar internetanslutningen
+- Så: ska matchen inte avslutas
+- Och: den senaste giltiga spelstatusen ska finnas kvar
+- Och: spelaren ska kunna fortsätta matchen när anslutningen återkommer
+
+# FR-09 – Pausa och gå tillbaka till ett spel mot datorn
+### Scenario 1: Spelaren återupptar ett tidigare spel
+
+- Givet: att användaren har ett pågående spel mot datorn
+- När: användaren lämnar spelet och öppnar Gomoku igen
+- Så: ska det tidigare spelet finnas kvar
+- Och: användaren ska kunna fortsätta spelet där det avbröts
+
 
