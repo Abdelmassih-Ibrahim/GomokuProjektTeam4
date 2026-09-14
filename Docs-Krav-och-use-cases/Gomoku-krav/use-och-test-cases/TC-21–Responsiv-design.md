@@ -1,7 +1,7 @@
 # Icke-funktionella testfall
 # TC-21 – Responsiv design
 ## Relaterat NFR:
-NFR-02, NFR-15
+NFR-02, NFR-14
 ## Förutsättningar:
 Spelet går att öppna på olika typer av enheter.
 # Steg:
