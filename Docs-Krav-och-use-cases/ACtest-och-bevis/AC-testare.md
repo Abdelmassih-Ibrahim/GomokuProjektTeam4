@@ -19,7 +19,10 @@ Spelet startar och användaren kan göra ett drag utan att skapa konto eller log
 
 **Resultat:** ☑ GODKÄND ☐ EJ GODKÄND
 
-**Bevis:** ![alt text](<Bevis 1.PNG>)
+
+**Bevis:**
+
+<img src="./Bevis 1.PNG" width="300">![alt text](<Bevis 1.PNG>)
 
 ---
 
