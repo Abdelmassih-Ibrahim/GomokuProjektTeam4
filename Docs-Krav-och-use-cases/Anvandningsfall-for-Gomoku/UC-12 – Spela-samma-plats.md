@@ -1,4 +1,4 @@
-# UC-12 – Spela på samma plat med en vän
+# UC-12 – Spela på samma plats med en vän
 
 | Fält              | Värden                         |
 |-------------------|--------------------------------|
