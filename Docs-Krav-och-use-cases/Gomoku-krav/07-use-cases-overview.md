@@ -40,6 +40,38 @@ sequenceDiagram
     Note over Player,GameSystem: Match startad och redo för första drag
 ```
 
+### 7.2.2 Spel mot datorn
+
+```mermaid
+sequenceDiagram
+    participant Player as Spelare
+    participant System as Gomoku System
+    participant AIOpponent as AI Motståndare
+
+    Player->>System: Väljer spela mot dator från startsida
+    System->>Player: Visar svårighetsgradsmeny
+    Player->>System: Väljer svårighetsgrad
+    System->>System: Initierar nytt spel
+    System->>Player: Visar spelplan
+    
+    loop Spel pågår
+        Player->>System: Gör ett drag
+        System->>System: Validerar drag
+        System->>Player: Uppdaterar spelplan
+        System->>System: Kontrollerar vinnare/oavgjort
+        
+        alt Spel slut
+            System->>Player: Visar resultat
+        else Spel fortsätter
+            System->>AIOpponent: Begär AI drag
+            AIOpponent->>System: Returnerar AI drag
+            System->>Player: Uppdaterar spelplan med AI drag
+            System->>System: Kontrollerar vinnare/oavgjort
+        end
+    end
+    
+    System->>Player: Visar slutresultat (vinnare/oavgjort)
+```
 
 ## 7.3 Kompletterande Use Cases
 
