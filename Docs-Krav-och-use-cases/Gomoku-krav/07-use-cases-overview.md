@@ -77,21 +77,22 @@ sequenceDiagram
 
 ```mermaid
 sequenceDiagram
-    participant Player as Player
-    participant System as System
-    participant Friend as Friend
+    actor Spelare
+    participant System
+    participant Vän
 
-    Player->>System: Start Gomoku match
-    System->>System: Generate invite link
-    System-->>Player: Display link
-    Player->>Player: Copy link
-    Player->>Friend: Send link (external)
-    Friend->>System: Click link
-    System->>System: Validate link & create game session
-    System-->>Friend: Join match (no account required)
-    Friend->>System: Participate in game
-    System-->>Player: Friend joined
-    Note over System: No personal data collected<br/>No account creation required<br/>GDPR compliant (data minimization)
+    Spelare->>System: Starta Gomoku-match
+    System->>System: Generera inbjudningslänk
+    System-->>Spelare: Visa länk
+    Spelare->>Spelare: Kopiera länk
+    Spelare->>Vän: Skicka länk (externt)
+    Vän-->>System: Klicka på länk
+    System->>System: Validera länk och skapa spelomgång
+    System-->>Vän: Gå med i match (ingen konto krävs)
+    Vän->>System: Delta i spelet
+    System-->>Spelare: Vän har anslutit
+
+    Note over Spelare,System: Inga personuppgifter samlas in<br/>Inget konto krävs<br/>GDPR-efterlevnad (minimering av data)
 ```
 
 ## 7.3 Kompletterande Use Cases
