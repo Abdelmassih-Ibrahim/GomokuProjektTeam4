@@ -19,4 +19,13 @@
 | UC-10 | Se matchresultat | GU, RU | GU, RU, AI | FR-10.1, FR-10.2, FR-10.3, FR-10.4, FR-10.5, FR-10.6, FR-10.7, FR-11.1, FR-11.2, FR-11.3, FR-11.4, FR-11.5 |
 | UC-12 | Spela på samma plan som vän | GU, RU | GU, RU | FR-07.1, FR-07.2, FR-07.3, FR-07.4 |
 
+## Kompletterande Use Cases
+
+| UC-ID | Användningsfall namn | Primär aktör | Sekundär aktör | Relaterade CR (står som FR) |
+|-------|----------------------|--------------|----------------|-----------------------------|
+| UC-03 | Välja svårighetsgrad | GU, RU | AI | FR-03.1, FR-03.2, FR-03.3 |
+| UC-04 | Spela anonymt utan konto | GU | GU, RU, AI | FR-04.1, FR-04.2, FR-04.3, FR-04.4, FR-04.5, FR-04.6 |
+| UC-05 | Hantera cookies | GU | finns ej | FR-05.1, FR-05.2, FR-05.3, FR-05.4, FR-05.5 |
+| UC-09 | Återuppta sparad match | GU, RU | GU, RU, AI | FR-09.1, FR-09.2 |
+| UC-11 | Fortsätta efter internetavbrott | GU, RU | GU, RU, AI | FR-08.1, FR-08.2 |
 
