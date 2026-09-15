@@ -19,6 +19,24 @@
 | UC-10 | Se matchresultat | GU, RU | GU, RU, AI | FR-10.1, FR-10.2, FR-10.3, FR-10.4, FR-10.5, FR-10.6, FR-10.7, FR-11.1, FR-11.2, FR-11.3, FR-11.4, FR-11.5 |
 | UC-12 | Spela på samma plan som vän | GU, RU | GU, RU | FR-07.1, FR-07.2, FR-07.3, FR-07.4 |
 
+### 7.2.1 Starta en match
+
+sequenceDiagram
+    actor Player as Spelare
+    participant GameSystem as Spelsystem
+    participant AIOpponent as AI Motståndare
+    participant GameBoard as Spelplan
+
+    Player->>GameSystem: Välj att starta nytt spel
+    GameSystem->>Player: Visa alternativ (mot dator/människa)
+    Player->>GameSystem: Välj motståndare
+    GameSystem->>GameSystem: Skapa ny match
+    GameSystem->>GameBoard: Initiera tom spelplan
+    GameBoard->>GameSystem: Spelplan redo
+    GameSystem->>GameSystem: Bestäm första spelare
+    GameSystem->>Player: Visa spelplan och turordning
+    Note over Player,GameSystem: Match startad och redo för första drag
+
 ## 7.3 Kompletterande Use Cases
 
 | UC-ID | Användningsfall namn | Primär aktör | Sekundär aktör | Relaterade CR (står som FR) |
@@ -52,5 +70,4 @@
 | Högst prioritet | UC-01, UC-02, UC-05, UC-06, UC-07, UC-10, UC-12  |
 | Medelhög prioritet | UC-03, UC-04, UC-09, UC-11 |
 | Lägre prioritet |  |
-
 
