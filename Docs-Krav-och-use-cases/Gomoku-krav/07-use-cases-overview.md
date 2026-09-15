@@ -105,6 +105,24 @@ sequenceDiagram
 | UC-09 | Återuppta sparad match | GU, RU | GU, RU, AI | FR-09.1, FR-09.2 |
 | UC-11 | Fortsätta efter internetavbrott | GU, RU | GU, RU, AI | FR-08.1, FR-08.2 |
 
+### 7.3.1 Välja svårighetsgrad
+
+```mermaid
+flowchart LR
+
+    Spelare([Spelare])
+
+    subgraph GomokuSystem["Gomoku System"]
+        UC03(["UC-03<br/>Välja svårighetsgrad<br/>mot en dator"])
+
+        Note["Svårighetsgrader:<br/>- Lätt<br/>- Medel<br/>- Svår"]
+    end
+
+    Spelare --> UC03
+    UC03 --- Note
+```
+
+
 ## 7.4 Icke-funktionella Use Cases
 
 | UC-ID | Användningsfall namn | Primär aktör | Sekundär aktör | Relaterade NFR |
