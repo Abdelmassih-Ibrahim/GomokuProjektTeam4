@@ -6,7 +6,7 @@
 | ID            |Relaterat-UC    |
 |-------------------|--------------------------------|
 | TC-01 – Starta en match  |UC-01 |
-| TC-02 – Spela mot datornmma plats. |UC-02 |
+| TC-02 – Spela mot dator plats. |UC-02 |
 | TC-03 – Ogiltigt drag på upptagen position| UC-02 |
 | TC-04 – Spelare kan bara spela på sin tur| UC-02+UC.07 |
 | TC-05 – Fem i rad horisontellt| UC02 + UC.10 |
