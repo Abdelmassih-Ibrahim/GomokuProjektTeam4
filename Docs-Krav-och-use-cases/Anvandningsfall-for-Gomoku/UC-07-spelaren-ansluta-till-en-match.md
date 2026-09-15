@@ -28,7 +28,7 @@ Spelaren vill kunna ansluta till en Gomoku match genom en länk utan att behöva
 4. Systemet kontrollerar först att matchen är aktiv och att den finns en ledig plats.
 5. Spelaren ansluter till matchen utan att behöva skapa ett konto eller lämna personliga uppgifter.
 6. Systemet visar spelplanen för Gomoku med matchens aktuella tillstånd.
-7. Systemet koipplar båda spelarna i samma match.
+7. Systemet kopplar båda spelarna i samma match.
 8. Spelarna kan börja spela mot varandra.
 
 # Alternativa flöden:
