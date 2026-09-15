@@ -136,6 +136,20 @@ flowchart LR
     Spelare --> UC04
 ```
 
+### 7.3.3 Användaren hanterar cookies
+
+```mermaid
+flowchart LR
+
+    Spelare([Spelare])
+
+    subgraph GomokuSystem["Gomoku System"]
+        UC05(["UC-05<br/>Användaren hanterar cookies"])
+    end
+
+    Spelare --> UC05
+```
+
 ## 7.4 Icke-funktionella Use Cases
 
 | UC-ID | Användningsfall namn | Primär aktör | Sekundär aktör | Relaterade NFR |
