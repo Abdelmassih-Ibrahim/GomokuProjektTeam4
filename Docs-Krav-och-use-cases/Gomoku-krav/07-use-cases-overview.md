@@ -19,7 +19,7 @@
 | UC-10 | Se matchresultat | GU, RU | GU, RU, AI | FR-10.1, FR-10.2, FR-10.3, FR-10.4, FR-10.5, FR-10.6, FR-10.7, FR-11.1, FR-11.2, FR-11.3, FR-11.4, FR-11.5 |
 | UC-12 | Spela på samma plan som vän | GU, RU | GU, RU | FR-07.1, FR-07.2, FR-07.3, FR-07.4 |
 
-## Kompletterande Use Cases
+## 7.3 Kompletterande Use Cases
 
 | UC-ID | Användningsfall namn | Primär aktör | Sekundär aktör | Relaterade CR (står som FR) |
 |-------|----------------------|--------------|----------------|-----------------------------|
