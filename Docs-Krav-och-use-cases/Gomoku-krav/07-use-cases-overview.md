@@ -73,6 +73,27 @@ sequenceDiagram
     System->>Player: Visar slutresultat (vinnare/oavgjort)
 ```
 
+### 7.2.3 Bjud in vän via länk
+
+```mermaid
+sequenceDiagram
+    participant Player as Player
+    participant System as System
+    participant Friend as Friend
+
+    Player->>System: Start Gomoku match
+    System->>System: Generate invite link
+    System-->>Player: Display link
+    Player->>Player: Copy link
+    Player->>Friend: Send link (external)
+    Friend->>System: Click link
+    System->>System: Validate link & create game session
+    System-->>Friend: Join match (no account required)
+    Friend->>System: Participate in game
+    System-->>Player: Friend joined
+    Note over System: No personal data collected<br/>No account creation required<br/>GDPR compliant (data minimization)
+```
+
 ## 7.3 Kompletterande Use Cases
 
 | UC-ID | Användningsfall namn | Primär aktör | Sekundär aktör | Relaterade CR (står som FR) |
