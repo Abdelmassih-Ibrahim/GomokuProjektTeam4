@@ -122,6 +122,19 @@ flowchart LR
     UC03 --- Note
 ```
 
+### 7.3.2 Spela anonymt
+
+```mermaid
+flowchart LR
+
+    Spelare([Guest spelare])
+
+    subgraph GomokuSystem["Gomoku System"]
+        UC04(["UC-04<br/>Spela anonymt utan konto"])
+    end
+
+    Spelare --> UC04
+```
 
 ## 7.4 Icke-funktionella Use Cases
 
