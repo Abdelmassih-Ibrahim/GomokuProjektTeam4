@@ -45,3 +45,12 @@
 | UC-11 | Fortsätta efter internetavbrott | GU, RU | GU, RU, AI | NFR-03, NFR-07, NFR-08 |
 | UC-12 | Spela på samma plan som vän | GU, RU | GU, RU | NFR-01, NFR-02 |
 
+## 7.5 Use Case Priority Matrix
+
+| Prioritet | Use Cases |
+|-----------|-----------|
+| Högst prioritet | UC-01, UC-02, UC-05, UC-06, UC-07, UC-10, UC-12  |
+| Medelhög prioritet | UC-03, UC-04, UC-09, UC-11 |
+| Lägre prioritet |  |
+
+
