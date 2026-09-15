@@ -29,3 +29,19 @@
 | UC-09 | Återuppta sparad match | GU, RU | GU, RU, AI | FR-09.1, FR-09.2 |
 | UC-11 | Fortsätta efter internetavbrott | GU, RU | GU, RU, AI | FR-08.1, FR-08.2 |
 
+## 7.4 Icke-funktionella Use Cases
+
+| UC-ID | Användningsfall namn | Primär aktör | Sekundär aktör | Relaterade NFR |
+|-------|----------------------|--------------|----------------|----------------|
+| UC-01 | Starta en match | GU, RU | GU, RU, AI | NFR-01, NFR-03 |
+| UC-02 | Spel mot datorns AI | GU, RU | AI | NFR-01, NFR-03 |
+| UC-03 | Välja svårighetsgrad | GU, RU | AI | NFR-01 |
+| UC-04 | Spela anonymt utan konto | GU | GU, RU, AI | NFR-04, NFR-08 |
+| UC-05 | Hantera cookies | GU | finns ej | NFR-05, NFR-08 |
+| UC-06 | Bjud in vän via länk | GU, RU | GU, RU | NFR-06, NFR-08 |
+| UC-07 | Anslut till match via länk | GU, RU | GU, RU | NFR-01, NFR-05, NFR-06, NFR-08 |
+| UC-09 | Återuppta sparad match | GU, RU | GU, RU, AI | NFR-01, NFR-03 |
+| UC-10 | Se matchresultat | GU, RU | GU, RU, AI | NFR-01, NFR-03, NFR-10 |
+| UC-11 | Fortsätta efter internetavbrott | GU, RU | GU, RU, AI | NFR-03, NFR-07, NFR-08 |
+| UC-12 | Spela på samma plan som vän | GU, RU | GU, RU | NFR-01, NFR-02 |
+
