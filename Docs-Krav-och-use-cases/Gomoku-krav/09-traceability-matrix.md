@@ -132,7 +132,6 @@
 | UC-05 | Hantera cookies | NFR-05, NFR-08 |
 | UC-06 | Bjud in vän via länk | NFR-06, NFR-08 |
 | UC-07 | Anslut till match via länk | NFR-01, NFR-05, NFR-06, NFR-08 |
-| UC-08 | ... | |
 | UC-09 | Återuppta sparad match | NFR-01, NFR-03 |
 | UC-10 | Se matchresultat | NFR-01, NFR-03, NFR-10 |
 | UC-11 | Fortsätta efter internetavbrott | NFR-03, NFR-07, NFR-08 |
@@ -162,10 +161,10 @@
 | TC-18 | Bevara matchens state | UC-09, UC-12 |
 | TC-19 | Hantera tillfälligt internetavbrott | UC-11 |
 | TC-20 | Samma state hos båda onlinespelarna | UC-12 |
-| TC-21 | Responsiv design | Saknas |
-| TC-22 | Spela via webbläsare | Saknas |
-| TC-23 | Visuell stabilitet | Saknas |
-| TC-24 | Ingen personlig information vid anslutning via spellänk | Saknas |
+| TC-21 | Responsiv design | NFR |
+| TC-22 | Spela via webbläsare | NFR |
+| TC-23 | Visuell stabilitet | NFR |
+| TC-24 | Ingen personlig information vid anslutning via spellänk | NFR |
 
 ## Användningsfall ---> Test Case
 
@@ -178,7 +177,6 @@
 | UC-05 | Hantera cookies | TC-13 |
 | UC-06 | Bjud in vän via länk | TC-14 |
 | UC-07 | Anslut till match via länk | TC-04, TC-15, TC-16 |
-| UC-08 | ... | |
 | UC-09 | Återuppta sparad match | TC-18 |
 | UC-10 | Se matchresultat | TC-05, TC-06, TC-07, TC-08, TC-09, TC-10 |
 | UC-11 | Fortsätta efter internetavbrott | TC-19 |
