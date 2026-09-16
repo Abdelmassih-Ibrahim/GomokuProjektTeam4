@@ -49,7 +49,7 @@ BDD används här för att förtydliga de kompletterande krav som innehåller st
 
 # FR-03 – Välj svårighetsgrad
 ```gherkin
-### Scenario 1: Användaren väljer svårighetsgrad
+Scenario 1: Användaren väljer svårighetsgrad
 - Givet: att användaren har valt att spela mot datorn
 - När: användaren öppnar menyn för svårighetsgrad
 - Så: ska alternativen "Lätt", "Medel" och "Svår" visas
@@ -58,7 +58,7 @@ BDD används här för att förtydliga de kompletterande krav som innehåller st
 ```
 # FR-04 – Spela anonymt utan konto
 ```gherkin
-### Scenario 1: Användaren spelar utan konto
+ Scenario 1: Användaren spelar utan konto
 - Givet: att användaren öppnar Gomoku
 - När: användaren väljer ett spelläge och startar ett spel
 - Så: ska användaren kunna spela utan att skapa ett konto
@@ -67,7 +67,7 @@ BDD används här för att förtydliga de kompletterande krav som innehåller st
 ```
 # FR-05 – Användaren hanterar Cookies
 ```gherkin
-### Scenario 1: Användaren nekar cookies
+Scenario 1: Användaren nekar cookies
 - Givet: att användaren öppnar Gomoku
 - När: information om cookies visas
 - Så: ska användaren kunna neka cookies
@@ -75,7 +75,7 @@ BDD används här för att förtydliga de kompletterande krav som innehåller st
 ```
 # FR-08 – Återanslut till spel
 ```gherkin
-### Scenario 1: Spelaren tappar internetanslutningen
+ Scenario 1: Spelaren tappar internetanslutningen
 - Givet: att två spelare har en pågående match online
 - När: en spelare tillfälligt tappar internetanslutningen
 - Så: ska matchen inte avslutas
@@ -85,7 +85,7 @@ BDD används här för att förtydliga de kompletterande krav som innehåller st
 # FR-09 – Pausa och gå tillbaka till ett spel mot datorn
 
 ```gherkin
-### Scenario 1: Spelaren återupptar ett tidigare spel
+Scenario 1: Spelaren återupptar ett tidigare spel
 - Givet: att användaren har ett pågående spel mot datorn
 - När: användaren lämnar spelet och öppnar Gomoku igen
 - Så: ska det tidigare spelet finnas kvar
