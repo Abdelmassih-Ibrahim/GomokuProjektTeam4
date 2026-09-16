@@ -20,10 +20,12 @@ Som en spelare vill jag spela Gomoku mot en motståndare tills en av oss får fe
 
 Eftersom FR-01.2 innehåller tre olika spellägen kan kravet förtydligas med:
 
-### Scenario 1: Spelaren väljer att spela mot datorn
-- Givet: att spelaren befinner sig på startsidan
-- När:  spelaren väljer "Mot datorn"
-- Så: ska systemet starta ett spel mot datorns AI
+```gherkin
+Scenario: Spelaren väljer att spela mot datorn
+  Given att spelaren befinner sig på startsidan
+  When spelaren väljer "Mot datorn"
+  Then ska systemet starta ett spel mot datorns AI
+```
 
 ### Scenario 2: Spelaren väljer två spelare
 - Givet: att spelaren befinner sig på startsidan
