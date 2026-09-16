@@ -33,34 +33,36 @@ BDD används här för att förtydliga de icke-funktionella krav som vi tyckte v
 
 
 # NFR-02 – Responsiv design
-
-### Scenario 1: Spelet används på mobil
+```gherkin
+ Scenario 1: Spelet används på mobil
 - Givet: att användaren öppnar spelet på en mobil
 - När: spelplanen visas
 - Så: ska spelplanen anpassas efter skärmens storlek
 - Och: knappar ska fungera
 - Och: information ska vara synlig
 - Och: användaren ska kunna genomföra ett drag
-
+```
+```gherkin
 ### Scenario 2: Spelet används på dator
-
 - Givet: att användaren öppnar spelet på en dator
 - När: spelplanen visas
 - Så: ska spelplanen anpassas efter skärmens storlek
 - Och: knappar ska fungera
 - Och: information ska vara synlig
 - Och: användaren ska kunna genomföra ett drag
-
+```
 
 # NFR-05 – Kompatibilitet
-### Scenario 1: Spelet öppnas direkt i webbläsaren
+```gherkin
+ Scenario 1: Spelet öppnas direkt i webbläsaren
 - Givet: att användaren använder en mobil eller dator
 - När: användaren öppnar spelet i en webbläsare
 - Så: ska spelet kunna användas direkt
 - Och: användaren ska inte behöva installera något
-
+```
 
 # NFR-06 – Anslutning via länk
+```gherkin
 ### Scenario 1: Två spelare spelar tillsammans via en länk
 - Givet: att en spelare har skapat en match
 - Och: att spelaren har en giltig spellänk
@@ -68,54 +70,60 @@ BDD används här för att förtydliga de icke-funktionella krav som vi tyckte v
 - Så: ska den andra spelaren kunna ansluta till samma match
 - Och: båda spelarna ska kunna spela tillsammans
 - Och: spelarna ska kunna befinna sig på samma eller olika platser
-
+```
 
 # NFR-07 – Tillförlitlighet
+```gherkin
 ### Scenario 1: Matchen förloras inte vid tillfälligt internetavbrott
+
 - Givet: att två spelare befinner sig i en pågående match
 - När: en spelares internetanslutning tillfälligt bryts
 - Så: ska matchen inte förloras
 - Och: den senaste giltiga spelstatusen ska finnas kvar
 - Och: spelaren ska kunna fortsätta matchen efter återanslutning
-
+```
 
 
 # NFR-08 – Säkerhet och integritet
+```gherkin
 ### Scenario 1: Spelaren kan spela utan personlig information
 - Givet: att användaren vill spela
 - När: användaren startar eller ansluter till en match
 - Så: ska personlig information inte krävas
 - Och: användaren ska inte behöva skapa ett konto
 - Och: användaren ska inte behöva logga in
+```
 
+```gherkin
 ### Scenario 2: Inbjudningslänken innehåller ingen personlig information
-
 - Givet: att systemet har skapat en inbjudningslänk
 - När: användaren delar länken
 - Så: ska länken inte innehålla personlig information
 - Och: länken ska kunna användas av den andra spelaren för att ansluta till matchen
+```
 
-
+```gherkin
 # NFR-09 – Visuell/UI-stabilitet
-
-### Scenario 1: En sten placeras på spelplanen
-
+ Scenario 1: En sten placeras på spelplanen
 - Givet: att spelplanen visas
 - När: användaren placerar en sten
 - Så: ska spelplanens storlek vara oförändrad
 - Och: spelplanens position ska vara oförändrad
 - Och: rutornas dimensioner ska vara oförändrade
-
+```
 ### Scenario 2: Flera stenar placeras på spelplanen
+```gherkin
 - Givet: att flera stenar redan finns på spelplanen
 - När: användaren placerar ytterligare en sten
 - Så: ska brädet inte krympa
 - Och: brädet ska inte flytta sig
 - Och: brädet ska inte ändra storlek
+```
 
 
 
 # NFR-10 – Brädans tillstånd
+```gherkin
 ### Scenario 1: Samma brädstatus visas för båda spelarna
 - Givet: att två spelare befinner sig i samma match
 - Och: att båda spelarna är anslutna
@@ -123,7 +131,7 @@ BDD används här för att förtydliga de icke-funktionella krav som vi tyckte v
 - Så: ska stenen visas på samma position för båda spelarna
 - Och: brädans tillstånd ska vara samma för båda spelarna
 - Och: aktuell tur ska uppdateras
-
+```
 ## Internetavbrott
 
 | ID     | KRAV                                                                                                                                                                   |
@@ -131,15 +139,16 @@ BDD används här för att förtydliga de icke-funktionella krav som vi tyckte v
 | NFR-11 | Ett tillfälligt internetavbrott ska inte automatiskt avsluta en pågående match som sker på distans mellan två spelare                                                  |
 | NFR-12 | När spelaren återansluter ska systemet alltid återställa den senaste giltiga spelstatus, tillstånd och turordning. (Om motståndaren inte har valt att avsluta matchen) |
 
+```gherkin
 # NFR-11 – Tillfälligt internetavbrott
-
 ### Scenario 1: Matchen avslutas inte automatiskt vid internetavbrott
 - Givet: att två spelare har en pågående match på distans
 - När: en spelares internetanslutning tillfälligt bryts
 - Så: ska matchen inte automatiskt avslutas
 - Och: den senaste giltiga spelstatusen ska finnas kvar
 - Och: matchen ska kunna fortsätta efter återanslutning
-
+```
+```gherkin
 # NFR-12 – Återställning efter återanslutning
 ### Scenario 1: Matchen återställs efter återanslutning
 - Givet: att två spelare har en pågående match på distans
@@ -151,24 +160,28 @@ BDD används här för att förtydliga de icke-funktionella krav som vi tyckte v
 - Och: spelplanens tillstånd ska återställas
 - Och: rätt spelares tur ska visas
 - Och: matchen ska kunna fortsättas
-
+```
 ## Anonymt spelande
 | ID     | KRAV                                                                                                       |
 | ------ | ---------------------------------------------------------------------------------------------------------- |
 | NFR-13 | Spelet ska alltid kunna användas direkt i en webbläsare utan att spelaren behöver installera något program |
 | NFR-14 | Spelet ska kunna användas på både datorer och mobiltelefoner                                               |
 
+```gherkin
 # NFR-14 – Spelet fungerar på datorer och mobiltelefoner
-### Scenario 1: Spelet används på dator
+ Scenario 1: Spelet används på dator
 - Givet: att användaren använder en dator
 - När: användaren öppnar spelet
 - Så: ska spelet kunna användas
 - Och: spelets funktioner ska vara tillgängliga
-### Scenario 2: Spelet används på mobiltelefon
+```
+```gherkin
+Scenario 2: Spelet används på mobiltelefon
 - Givet: att användaren använder en mobiltelefon
 - När: användaren öppnar spelet
 - Så: ska spelet kunna användas
 - Och: spelets funktioner ska vara tillgängliga
+```
 
 ```mermaid
 flowchart TD
