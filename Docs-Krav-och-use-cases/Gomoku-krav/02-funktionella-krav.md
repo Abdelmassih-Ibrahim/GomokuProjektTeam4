@@ -23,9 +23,9 @@ Eftersom FR-01.2 innehåller tre olika spellägen kan kravet förtydligas med:
 
 ```gherkin
 Scenario: Spelaren väljer att spela mot datorn
-  Given att spelaren befinner sig på startsidan
-  When spelaren väljer "Mot datorn"
-  Then ska systemet starta ett spel mot datorns AI
+  Givet: att spelaren befinner sig på startsidan
+  När: spelaren väljer "Mot datorn"
+  Så: ska systemet starta ett spel mot datorns AI
 ```
 ```gherkin
 ### Scenario 2: Spelaren väljer två spelare
