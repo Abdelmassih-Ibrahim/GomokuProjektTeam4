@@ -28,13 +28,13 @@ Scenario: Spelaren väljer att spela mot datorn
   Så: ska systemet starta ett spel mot datorns AI
 ```
 ```gherkin
-### Scenario 2: Spelaren väljer två spelare
+Scenario 2: Spelaren väljer två spelare
 - Givet: att spelaren befinner sig på startsidan
 - När:  spelaren väljer "Två spelare"
 - Så: ska systemet starta ett hot-seat-spel
 ```
 ```gherkin
-### Scenario 3: Spelaren väljer online-spel
+ Scenario 3: Spelaren väljer online-spel
 - Givet: att spelaren befinner sig på startsidan
 - När:  spelaren väljer "Online via länk"
 - Så: ska systemet starta ett online-spel
@@ -58,7 +58,7 @@ Scenario: Spelaren väljer att spela mot datorn
 
 # BDD-förtydligande för FR-02.8
 ```gherkin
-### Scenario 1: Spelaren gör ett drag
+ Scenario 1: Spelaren gör ett drag
 - Givet: att ett spel mot datorn pågår
 - Och: det är spelarens tur
 - När: spelaren placerar en markör på en tom position
@@ -66,27 +66,27 @@ Scenario: Spelaren väljer att spela mot datorn
 - Och: turen ska gå över till datorns AI
 ```
 ```gherkin
-### Scenario 2: Datorn gör sitt drag
+ Scenario 2: Datorn gör sitt drag
 - Givet: att det är datorns AI:s tur
 - När: datorn gör sitt drag
 - Så: ska datorns markör placeras på en tom position
 - Och: turen ska gå tillbaka till spelaren
 ```
 ```gherkin
-### Scenario 3: Spelaren försöker göra ett drag när det är datorns tur
+ Scenario 3: Spelaren försöker göra ett drag när det är datorns tur
 - Givet: att det är datorns AI:s tur
 - När: spelaren försöker placera en markör
 - Så: ska draget nekas
 ```
 # BDD-förtydligande för FR-02.9
 ```gherkin
-### Scenario 1: Spelaren får fem i rad
+Scenario 1: Spelaren får fem i rad
 - Givet: att spelaren har fyra markörer i rad
 - När: spelaren placerar den femte markören
 - Så: ska systemet identifiera fem i rad
 ```
 ```gherkin
-### Scenario 2: Datorns AI får fem i rad
+ Scenario 2: Datorns AI får fem i rad
 - Givet: att datorns AI har fyra markörer i rad
 - När: datorn placerar den femte markören
 - Så: ska systemet identifiera fem i rad
@@ -107,7 +107,7 @@ Scenario: Spelaren väljer att spela mot datorn
 
 # BDD-förtydligande för FR-06.5 och FR-06.6
 ```gherkin
-### Scenario 1: Spelaren ansluter via en giltig spellänk
+Scenario 1: Spelaren ansluter via en giltig spellänk
 - Givet: att en aktiv match har skapats
 - Och: spelaren har fått en giltig spellänk
 - När: spelaren öppnar länken
@@ -128,7 +128,7 @@ Scenario: Spelaren väljer att spela mot datorn
 
 # BDD-förtydligande för FR-07.4
 ```gherkin
-### Scenario 1: Spelare 1 gör ett drag i ett onlinespel
+ Scenario 1: Spelare 1 gör ett drag i ett onlinespel
 - Givet: att två spelare befinner sig i samma aktiva onlinematch
 - Och: det är spelare 1:s tur
 - När: spelare 1 placerar en markör på en tom position
@@ -137,7 +137,7 @@ Scenario: Spelaren väljer att spela mot datorn
 - Och: spelare 1 ska inte kunna göra ytterligare ett drag
 ```
 ```gherkin
-### Scenario 2: Spelare 2 gör nästa drag
+ Scenario 2: Spelare 2 gör nästa drag
 - Givet: att det är spelare 2:s tur
 - När: spelare 2 placerar en markör på en tom position
 - Så: ska draget registreras
@@ -161,26 +161,26 @@ Scenario: Spelaren väljer att spela mot datorn
 
 Eftersom fem i rad kan uppstå i olika riktningar förtydligas kravet med tre scenarier:
 ```gherkin
-### Scenario 1: Fem markeringar ligger horisontellt
+ Scenario 1: Fem markeringar ligger horisontellt
 - Givet: att en spelare har fyra markeringar i rad horisontellt
 - När: spelaren placerar den femte markeringen
 - Så: ska systemet identifiera fem i rad
 ```
 ```gherkin
-### Scenario 2: Fem markeringar ligger vertikalt
+Scenario 2: Fem markeringar ligger vertikalt
 - Givet: att en spelare har fyra markeringar i rad vertikalt
 - När: spelaren placerar den femte markeringen
 - Så: ska systemet identifiera fem i rad
 ```
 ```gherkin
-### Scenario 3: Fem markeringar ligger diagonalt
+ Scenario 3: Fem markeringar ligger diagonalt
 - Givet: att en spelare har fyra markeringar i rad diagonalt
 - När: spelaren placerar den femte markeringen
 - Så: ska systemet identifiera fem i rad
 ```
 # BDD-förtydligande för FR-10.5
 ```gherkin
-### Scenario 1: Resultatskärmen visas efter vinst
+Scenario 1: Resultatskärmen visas efter vinst
 - Givet: att en spelare har vunnit matchen
 - När: matchen avslutas
 - Så: ska resultatskärmen visas
@@ -202,7 +202,7 @@ Eftersom fem i rad kan uppstå i olika riktningar förtydligas kravet med tre sc
 
 # BDD-förtydligande för FR-11.1 och FR-11.2
 ```gherkin
-### Scenario 1: Matchen blir oavgjord
+ Scenario 1: Matchen blir oavgjord
 - Givet: att spelplanen är full
 - Och: ingen spelare har fått fem i rad
 - När: den sista lediga positionen fylls
@@ -211,7 +211,7 @@ Eftersom fem i rad kan uppstå i olika riktningar förtydligas kravet med tre sc
 ```
 # BDD-förtydligande för FR-11.3
 ```gherkin
-### Scenario 1: Resultatskärmen visas efter oavgjort
+ Scenario 1: Resultatskärmen visas efter oavgjort
 - Givet: att matchen har slutat oavgjort
 - När: matchen avslutas
 - Så: ska resultatskärmen visas
