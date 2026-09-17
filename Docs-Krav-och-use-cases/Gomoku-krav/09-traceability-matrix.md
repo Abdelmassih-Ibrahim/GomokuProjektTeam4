@@ -51,7 +51,6 @@
 | UC-02 | Spela mot en dator | FR-02.1, FR-02.4, FR-02.5, FR-02.6, FR-02.7, FR-02.8, FR-02.9, FR-02.10, FR-02.11, FR-02.12 |
 | UC-03 | Välja svårighetsgrad | | FR-03.1, FR-03.3, FR-03.3
 | UC-04 | Användaren spelar anonymt utan konto | | FR-04.2, FR-04.3, FR-04.4, FR-04.5, FR-04.6
-| UC-05 | Användaren hanterar cookies | |
 | UC-06 | Användaren bjuder in sin vän via länk | FR-06.1, FR-06.2, FR-06.3, FR-06.4, FR-07.2, FR-07.3 |
 | UC-07 | Ansluta till en match | FR-06.5, FR-06.6, FR-06.9, FR-07.2 |
 | UC-08 | Avsluta pågående match | FR-10.4, FR-10.6, FR-10.7, FR-11.2, FR-11.4, FR-11.5 |
@@ -88,18 +87,14 @@
 ## Användningsfall ---> Kompletterande krav
 
 | UC ID | Användningsfall | Förverkligad av CR |
-|---|---|---|
-| UC-01 | Starta en match | |
-| UC-02 | Spela mot en dator | |
+|-------|-----------------|--------------------|
 | UC-03 | Välja svårighetsgrad | CR-03.1, CR-03.2, CR-03.3 |
 | UC-04 | Användaren spelar anonymt utan konto | CR-04.1, CR-04.2, CR-04.3, CR-04.4, CR-04.5, CR-04.6 |
 | UC-05 | Användaren hanterar cookies | CR-05.1, CR-05.2, CR-05.3, CR-05.4, CR-05.5 |
 | UC-06 | Användaren bjuder in sin vän via länk | CR-04.2, CR-04.3, CR-04.5, CR-04.6 |
 | UC-07 | Ansluta till en match | CR-04.2, CR-04.3, CR-04.5, CR-04.6 |
 | UC-09 | Fortsätta pausad match | CR-09.1, CR-09.2 |
-| UC-10 | Se matchresultat | |
 | UC-11 | Fortsätta efter internetavbrott | CR-08.1, CR-08.2 |
-| UC-12 | Bevara spelstatus | |
 
 ## Icke-funktionella krav ---> Användningsfall
 
@@ -113,13 +108,7 @@
 | NFR-06 | Anslutning via länk           | UC-06, UC-07 |
 | NFR-07 | Tillförlitlighet              | UC-11 |
 | NFR-08 | Säkerhet och integritet (inbjudningslänk) | UC-04, UC-05, UC-06, UC-07, UC-11 |
-| NFR-09 | Visuel stabilitet |  |
 | NFR-10 | Säkerhet och integritet (Delta i match) | UC-10 |
-| NFR-11 | Brädans tillstånd |  |
-| NFR-12 | Hantera tillfälligt internetavbrott |  |
-| NFR-13 | Återanslut till match |  |
-| NFR-14 | Kunna spela i webbläsare |  |
-| NFR-15 | Kunna användas på olika enheter |  |
 
 ## Användningsfall ---> Icke-funktionella krav
 
@@ -160,11 +149,7 @@
 | TC-17 | Spela hot-seat multiplayer | UC-12 |
 | TC-18 | Bevara matchens state | UC-09, UC-12 |
 | TC-19 | Hantera tillfälligt internetavbrott | UC-11 |
-| TC-20 | Samma state hos båda onlinespelarna | UC-12 |
-| TC-21 | Responsiv design | NFR |
-| TC-22 | Spela via webbläsare | NFR |
-| TC-23 | Visuell stabilitet | NFR |
-| TC-24 | Ingen personlig information vid anslutning via spellänk | NFR |
+| TC-20 | Samma state hos båda onlinespelarna | UC-12
 | TC-25 | Avsluta, state sparas | UC-08 |
 | TC-26 | Avsluta state sparas inte | UC-08 |
 
