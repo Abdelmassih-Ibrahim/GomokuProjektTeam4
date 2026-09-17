@@ -3,6 +3,7 @@
 UC-13 - Spela hot-seat multiplayer
 
 | Fält | Värde |
+|------|-------|
 | Use Case ID | UC-13 |
 | Namn | Spela hot-seat multiplayer |
 | Version | 1.0 |
