@@ -26,7 +26,7 @@
 | FR-06.5  | Omdirigera användaren | UC-07 |
 | FR-06.6  | Ladda spel via länk | UC-07 |
 | FR-06.9  | Spela utan befintligt konto eller inloggning | UC-07 | 
-| FR-07.1  | Hot-seat multiplayer | UC Saknas |
+| FR-07.1  | Hot-seat multiplayer | UC-13 |
 | FR-07.2  | Spela online via länk | UC-06, UC-07 |
 | FR-07.3  | Skapa online match via länk | UC-06 |
 | FR-07.4  | Hantera turordningen (multiplayerspel) | Tydlig beskrivning gällande turordning saknas i UC-06 och UC-07 |
@@ -57,8 +57,9 @@
 | UC-08 | Avsluta pågående match | FR-10.4, FR-10.6, FR-10.7, FR-11.2, FR-11.4, FR-11.5 |
 | UC-09 | Fortsätta pausad match | | FR-09.1, FR-09.2
 | UC-10 | Se matchresultat | FR-10.1, FR-10.2, FR-10.3, FR-10.4, FR-10.5, FR-10.6, FR-10.7, FR-11.1, FR-11.2, FR-11.3, FR-11.4, FR-11.5 |
-| UC-11 | Fortsätta efter internetavbrott | | FR-08.1, FR-08.2
-| UC-12 | Bevara spelstatus | | FR-09.1, FR-09.2	
+| UC-11 | Fortsätta efter internetavbrott |  FR-08.1, FR-08.2 |
+| UC-12 | Bevara spelstatus |  FR-09.1, FR-09.2 |
+| UC-13 | Spela hot-seat multiplayer | FR-07.1 |
 
 ## Kompletterande krav ---> Användningsfall
 
