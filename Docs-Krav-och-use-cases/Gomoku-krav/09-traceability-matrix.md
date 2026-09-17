@@ -164,6 +164,8 @@
 | TC-22 | Spela via webbläsare | NFR |
 | TC-23 | Visuell stabilitet | NFR |
 | TC-24 | Ingen personlig information vid anslutning via spellänk | NFR |
+| TC-25 | Avsluta, state sparas | UC-08 |
+| TC-26 | Avsluta state sparas inte | UC-08 |
 
 ## Användningsfall ---> Test Case
 
@@ -176,6 +178,7 @@
 | UC-05 | Hantera cookies | TC-13 |
 | UC-06 | Bjud in vän via länk | TC-14 |
 | UC-07 | Anslut till match via länk | TC-04, TC-15, TC-16 |
+| UC-08 | Avsluta pågående match | TC-25, TC-26 | 
 | UC-09 | Återuppta sparad match | TC-18 |
 | UC-10 | Se matchresultat | TC-05, TC-06, TC-07, TC-08, TC-09, TC-10 |
 | UC-11 | Fortsätta efter internetavbrott | TC-19 |
