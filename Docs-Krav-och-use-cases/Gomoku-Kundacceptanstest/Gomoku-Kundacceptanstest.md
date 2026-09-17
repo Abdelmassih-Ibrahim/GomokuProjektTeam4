@@ -359,21 +359,21 @@ spela.
 
   Område                                     Resultat
   ------------------------------------------ ----------
-  Starta och spela Gomoku                    PASS
-  Spela mot datorn                           PASS
-  Svårighetsgrader                           PASS
-  Två spelare på samma enhet                 PASS
-  Online via delad länk                      PASS
-  Spela utan konto                           PASS
-  Turordning                                 PASS
-  Fem i rad                                  PASS
-  Oavgjort                                   PASS
-  Pausa och återuppta                        PASS
-  Starta nytt parti                          PASS
-  Mobil användning                           PASS
-  Datoranvändning                            PASS
-  Hantering av tillfälligt internetproblem   PASS
-  Enkel användning                           PASS
+  - Starta och spela Gomoku                    PASS
+  - Spela mot datorn                           PASS
+  - Svårighetsgrader                           PASS
+  - Två spelare på samma enhet                 PASS
+  - Online via delad länk                      PASS
+  - Spela utan konto                           PASS
+  - Turordning                                 PASS
+  - Fem i rad                                  PASS
+  - Oavgjort                                   PASS
+  - Pausa och återuppta                        PASS
+  - Starta nytt parti                          PASS
+  - Mobil användning                           PASS
+  - Datoranvändning                            PASS
+  - Hantering av tillfälligt internetproblem   PASS
+  - Enkel användning                           PASS
 
 ------------------------------------------------------------------------
 
