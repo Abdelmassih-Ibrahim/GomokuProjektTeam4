@@ -1,6 +1,6 @@
-# GiomokuProjektTeam4
+# GomokuProjektTeam4
 
-Detta är en gomoku-spel(fem i rad) utvecklad som en del av ett skolprojekt med stark fokus på kravfångst, systemanalys, usecases, modellering och testning.
+Detta är en gomoku-spel(fem i rad) utvecklad som en del av ett skolprojekt med stark fokus på kravfångst, systemanalys, use-cases, modellering och testning.
 
 Repositoryt innehåller projekets dokumentation men även övriga filer som användes under hela utvecklingsprocessen.
 ## Innehåll som finns:
