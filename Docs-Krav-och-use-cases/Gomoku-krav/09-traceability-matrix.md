@@ -29,7 +29,6 @@
 | FR-07.1  | Hot-seat multiplayer | UC-13 |
 | FR-07.2  | Spela online via länk | UC-06, UC-07 |
 | FR-07.3  | Skapa online match via länk | UC-06 |
-| FR-07.4  | Hantera turordningen (multiplayerspel) | Tydlig beskrivning gällande turordning saknas i UC-06 och UC-07 |
 | FR-10.1  | Identifiera fem i rad (vinst) | UC-10 |
 | FR-10.2  | Identifiera markeringar och spelare | UC-10 |
 | FR-10.3  | Identifiera vinnare utifrån markeringar | UC-10 |
