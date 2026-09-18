@@ -30,7 +30,6 @@ Scenario 1: Användaren ska kunna förstå hur spelet används
 - Och: ska det vara tydligt hur en sten placeras
 - Och: ska det vara tydligt vems tur det är
 - Och: användaren ska kunna förstå spelets grundläggande funktioner utan teknisk kunskap
-```gherkin
 ```
 # NFR-02 – Responsiv design
 ```gherkin
