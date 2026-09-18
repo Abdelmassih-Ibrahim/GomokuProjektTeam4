@@ -21,7 +21,7 @@ Vilka egenskaper ett system behöver ha är väldigt viktigt för användarupple
 
 BDD används här för att förtydliga de icke-funktionella krav som vi tyckte var större eller innehåller flera olika olika beteenden. Alla krav har inte ett eget BDD-scenario för dem kanske var tydliga redan.
 
-
+```gherkin
 # NFR-01 – Användarvänlighet
 ### Scenario 1: Användaren ska kunna förstå hur spelet används
 - Givet: att användaren öppnar spelet
@@ -30,8 +30,8 @@ BDD används här för att förtydliga de icke-funktionella krav som vi tyckte v
 - Och: ska det vara tydligt hur en sten placeras
 - Och: ska det vara tydligt vems tur det är
 - Och: användaren ska kunna förstå spelets grundläggande funktioner utan teknisk kunskap
-
-
+```gherkin
+```
 # NFR-02 – Responsiv design
 ```gherkin
  Scenario 1: Spelet används på mobil
