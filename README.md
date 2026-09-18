@@ -121,7 +121,7 @@ Dokumentationen visar flera delar av den process som använts under projektet:
  Kravfångst
        │
        ▼
-Use Cases
+Use Cases/userstory
        │
        ▼
  Business Rules
