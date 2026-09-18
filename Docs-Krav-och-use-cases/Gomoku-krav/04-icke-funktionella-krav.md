@@ -148,8 +148,9 @@ Scenario 1: En sten placeras på spelplanen
 | NFR-11 | Ett tillfälligt internetavbrott ska inte automatiskt avsluta en pågående match som sker på distans mellan två spelare                                                  |
 | NFR-12 | När spelaren återansluter ska systemet alltid återställa den senaste giltiga spelstatus, tillstånd och turordning. (Om motståndaren inte har valt att avsluta matchen) |
 
-```gherkin
+
 # NFR-11 – Tillfälligt internetavbrott
+```gherkin
 ### Scenario 1: Matchen avslutas inte automatiskt vid internetavbrott
 - Given: att två spelare har en pågående match på distans
 - When: en spelares internetanslutning tillfälligt bryts
@@ -158,8 +159,9 @@ Scenario 1: En sten placeras på spelplanen
 - And: matchen ska kunna fortsätta efter återanslutning
 ```
 
-```gherkin
+
 # NFR-12 – Återställning efter återanslutning
+```gherkin
 ### Scenario 1: Matchen återställs efter återanslutning
 - Given: att två spelare har en pågående match på distans
 - And: att spelplanen innehåller flera placerade stenar
@@ -179,8 +181,9 @@ Scenario 1: En sten placeras på spelplanen
 | NFR-13 | Spelet ska alltid kunna användas direkt i en webbläsare utan att spelaren behöver installera något program |
 | NFR-14 | Spelet ska kunna användas på både datorer och mobiltelefoner                                               |
 
-```gherkin
+
 # NFR-14 – Spelet fungerar på datorer och mobiltelefoner
+```gherkin
 Scenario 1: Spelet används på dator
 - Given: att användaren använder en dator
 - When: användaren öppnar spelet
