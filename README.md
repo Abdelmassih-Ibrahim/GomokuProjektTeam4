@@ -64,7 +64,7 @@ Use cases beskriver olika mål för scenarier där aktör interagerar med gomoku
 | [UC-09](Docs-Krav-och-use-cases/Anvandningsfall-for-Gomoku/UC-09-spelaren-vill-fortsatta-pagaande-match.md)        | Fortsätta en pågående match     |
 | [UC-10](Docs-Krav-och-use-cases/Anvandningsfall-for-Gomoku/UC-10-spelaren-vill-se-match-resultat.md)               | Se matchresultat                |
 | [UC-11](Docs-Krav-och-use-cases/Anvandningsfall-for-Gomoku/UC-11-spelaren-vill-fortsätta-efter-internetavgrott.md) | Fortsätta efter internetavbrott |
-| [UC-12](Docs-Krav-och-use-cases/Anvandningsfall-for-Gomoku/UC-12%20%23U2013%20Spela-samma-plats.md)                | Spela på samma plats            |
+
 
 ---
 
