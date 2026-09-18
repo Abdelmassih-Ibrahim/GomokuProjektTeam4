@@ -2,7 +2,6 @@
 
 ## User Story
 
-
 Som en spelare vill jag spela Gomoku mot en motståndare så att en av oss får fem i rad eller tills spelet slutar i oavgjort.
 
 ---
@@ -23,22 +22,25 @@ Eftersom FR-01.2 innehåller tre olika spellägen kan kravet förtydligas med:
 
 ```gherkin
 Scenario: Spelaren väljer att spela mot datorn
-  Givet: att spelaren befinner sig på startsidan
-  När: spelaren väljer "Mot datorn"
-  Så: ska systemet starta ett spel mot datorns AI
+  Given: att spelaren befinner sig på startsidan
+  When: spelaren väljer "Mot datorn"
+  Then: ska systemet starta ett spel mot datorns AI
 ```
+
 ```gherkin
 Scenario 2: Spelaren väljer två spelare
-- Givet: att spelaren befinner sig på startsidan
-- När:  spelaren väljer "Två spelare"
-- Så: ska systemet starta ett hot-seat-spel
+- Given: att spelaren befinner sig på startsidan
+- When: spelaren väljer "Två spelare"
+- Then: ska systemet starta ett hot-seat-spel
 ```
+
 ```gherkin
- Scenario 3: Spelaren väljer online-spel
-- Givet: att spelaren befinner sig på startsidan
-- När:  spelaren väljer "Online via länk"
-- Så: ska systemet starta ett online-spel
+Scenario 3: Spelaren väljer online-spel
+- Given: att spelaren befinner sig på startsidan
+- When: spelaren väljer "Online via länk"
+- Then: ska systemet starta ett online-spel
 ```
+
 ---
 
 # Spel mot datorns AI
@@ -57,40 +59,47 @@ Scenario 2: Spelaren väljer två spelare
 | **FR-02.12** | Systemet ska automatiskt avsluta spelet när spelplanen är full och deklarera matchen som oavgjord.     |
 
 # BDD-förtydligande för FR-02.8
+
 ```gherkin
- Scenario 1: Spelaren gör ett drag
-- Givet: att ett spel mot datorn pågår
-- Och: det är spelarens tur
-- När: spelaren placerar en markör på en tom position
-- Så: ska draget registreras
-- Och: turen ska gå över till datorns AI
+Scenario 1: Spelaren gör ett drag
+- Given: att ett spel mot datorn pågår
+- And: det är spelarens tur
+- When: spelaren placerar en markör på en tom position
+- Then: ska draget registreras
+- And: turen ska gå över till datorns AI
 ```
+
 ```gherkin
- Scenario 2: Datorn gör sitt drag
-- Givet: att det är datorns AI:s tur
-- När: datorn gör sitt drag
-- Så: ska datorns markör placeras på en tom position
-- Och: turen ska gå tillbaka till spelaren
+Scenario 2: Datorn gör sitt drag
+- Given: att det är datorns AI:s tur
+- When: datorn gör sitt drag
+- Then: ska datorns markör placeras på en tom position
+- And: turen ska gå tillbaka till spelaren
 ```
+
 ```gherkin
- Scenario 3: Spelaren försöker göra ett drag när det är datorns tur
-- Givet: att det är datorns AI:s tur
-- När: spelaren försöker placera en markör
-- Så: ska draget nekas
+Scenario 3: Spelaren försöker göra ett drag när det är datorns tur
+- Given: att det är datorns AI:s tur
+- When: spelaren försöker placera en markör
+- Then: ska draget nekas
 ```
+
 # BDD-förtydligande för FR-02.9
+
 ```gherkin
 Scenario 1: Spelaren får fem i rad
-- Givet: att spelaren har fyra markörer i rad
-- När: spelaren placerar den femte markören
-- Så: ska systemet identifiera fem i rad
+- Given: att spelaren har fyra markörer i rad
+- When: spelaren placerar den femte markören
+- Then: ska systemet identifiera fem i rad
 ```
+
 ```gherkin
- Scenario 2: Datorns AI får fem i rad
-- Givet: att datorns AI har fyra markörer i rad
-- När: datorn placerar den femte markören
-- Så: ska systemet identifiera fem i rad
+Scenario 2: Datorns AI får fem i rad
+- Given: att datorns AI har fyra markörer i rad
+- When: datorn placerar den femte markören
+- Then: ska systemet identifiera fem i rad
 ```
+
 ---
 
 # Bjud in vän via länk
@@ -106,15 +115,17 @@ Scenario 1: Spelaren får fem i rad
 | **FR-06.9** | Systemet ska låta användaren spela utan att skapa ett konto eller logga in.               |
 
 # BDD-förtydligande för FR-06.5 och FR-06.6
+
 ```gherkin
 Scenario 1: Spelaren ansluter via en giltig spellänk
-- Givet: att en aktiv match har skapats
-- Och: spelaren har fått en giltig spellänk
-- När: spelaren öppnar länken
-- Så: ska systemet identifiera matchen
-- Och: ladda den aktuella matchen
-- Och: spelaren ska kunna ansluta till matchen
+- Given: att en aktiv match har skapats
+- And: spelaren har fått en giltig spellänk
+- When: spelaren öppnar länken
+- Then: ska systemet identifiera matchen
+- And: ladda den aktuella matchen
+- And: spelaren ska kunna ansluta till matchen
 ```
+
 ---
 
 # Multiplayer-spel
@@ -127,22 +138,25 @@ Scenario 1: Spelaren ansluter via en giltig spellänk
 | **FR-07.4** | Systemet ska hantera turordningen mellan två spelare i ett onlinespel.                         |
 
 # BDD-förtydligande för FR-07.4
+
 ```gherkin
- Scenario 1: Spelare 1 gör ett drag i ett onlinespel
-- Givet: att två spelare befinner sig i samma aktiva onlinematch
-- Och: det är spelare 1:s tur
-- När: spelare 1 placerar en markör på en tom position
-- Så: ska draget registreras
-- Och: turen ska gå över till spelare 2
-- Och: spelare 1 ska inte kunna göra ytterligare ett drag
+Scenario 1: Spelare 1 gör ett drag i ett onlinespel
+- Given: att två spelare befinner sig i samma aktiva onlinematch
+- And: det är spelare 1:s tur
+- When: spelare 1 placerar en markör på en tom position
+- Then: ska draget registreras
+- And: turen ska gå över till spelare 2
+- And: spelare 1 ska inte kunna göra ytterligare ett drag
 ```
+
 ```gherkin
- Scenario 2: Spelare 2 gör nästa drag
-- Givet: att det är spelare 2:s tur
-- När: spelare 2 placerar en markör på en tom position
-- Så: ska draget registreras
-- Och: turen ska gå tillbaka till spelare 1
+Scenario 2: Spelare 2 gör nästa drag
+- Given: att det är spelare 2:s tur
+- When: spelare 2 placerar en markör på en tom position
+- Then: ska draget registreras
+- And: turen ska gå tillbaka till spelare 1
 ```
+
 ---
 
 # Vinst
@@ -160,34 +174,40 @@ Scenario 1: Spelaren ansluter via en giltig spellänk
 # BDD-förtydligande för FR-10.1
 
 Eftersom fem i rad kan uppstå i olika riktningar förtydligas kravet med tre scenarier:
+
 ```gherkin
- Scenario 1: Fem markeringar ligger horisontellt
-- Givet: att en spelare har fyra markeringar i rad horisontellt
-- När: spelaren placerar den femte markeringen
-- Så: ska systemet identifiera fem i rad
+Scenario 1: Fem markeringar ligger horisontellt
+- Given: att en spelare har fyra markeringar i rad horisontellt
+- When: spelaren placerar den femte markeringen
+- Then: ska systemet identifiera fem i rad
 ```
+
 ```gherkin
 Scenario 2: Fem markeringar ligger vertikalt
-- Givet: att en spelare har fyra markeringar i rad vertikalt
-- När: spelaren placerar den femte markeringen
-- Så: ska systemet identifiera fem i rad
+- Given: att en spelare har fyra markeringar i rad vertikalt
+- When: spelaren placerar den femte markeringen
+- Then: ska systemet identifiera fem i rad
 ```
+
 ```gherkin
- Scenario 3: Fem markeringar ligger diagonalt
-- Givet: att en spelare har fyra markeringar i rad diagonalt
-- När: spelaren placerar den femte markeringen
-- Så: ska systemet identifiera fem i rad
+Scenario 3: Fem markeringar ligger diagonalt
+- Given: att en spelare har fyra markeringar i rad diagonalt
+- When: spelaren placerar den femte markeringen
+- Then: ska systemet identifiera fem i rad
 ```
+
 # BDD-förtydligande för FR-10.5
+
 ```gherkin
 Scenario 1: Resultatskärmen visas efter vinst
-- Givet: att en spelare har vunnit matchen
-- När: matchen avslutas
-- Så: ska resultatskärmen visas
-- Och: vinnaren ska visas
-- Och: spelaren ska kunna välja huvudmeny
-- Och: spelaren ska kunna starta en ny match
+- Given: att en spelare har vunnit matchen
+- When: matchen avslutas
+- Then: ska resultatskärmen visas
+- And: vinnaren ska visas
+- And: spelaren ska kunna välja huvudmeny
+- And: spelaren ska kunna starta en ny match
 ```
+
 ---
 
 # Oavgjort
@@ -201,22 +221,24 @@ Scenario 1: Resultatskärmen visas efter vinst
 | **FR-11.5** | Spelaren ska kunna starta ett nytt parti efter avslutat spel.                                              |
 
 # BDD-förtydligande för FR-11.1 och FR-11.2
+
 ```gherkin
- Scenario 1: Matchen blir oavgjord
-- Givet: att spelplanen är full
-- Och: ingen spelare har fått fem i rad
-- När: den sista lediga positionen fylls
-- Så: ska systemet identifiera matchen som oavgjord
-- Och: matchen ska avslutas
-```
-# BDD-förtydligande för FR-11.3
-```gherkin
- Scenario 1: Resultatskärmen visas efter oavgjort
-- Givet: att matchen har slutat oavgjort
-- När: matchen avslutas
-- Så: ska resultatskärmen visas
-- Och: det ska stå att matchen blev oavgjord
-- Och: spelaren ska kunna välja huvudmeny
-- Och: spelaren ska kunna starta ett nytt parti
+Scenario 1: Matchen blir oavgjord
+- Given: att spelplanen är full
+- And: ingen spelare har fått fem i rad
+- When: den sista lediga positionen fylls
+- Then: ska systemet identifiera matchen som oavgjord
+- And: matchen ska avslutas
 ```
 
+# BDD-förtydligande för FR-11.3
+
+```gherkin
+Scenario 1: Resultatskärmen visas efter oavgjort
+- Given: att matchen har slutat oavgjort
+- When: matchen avslutas
+- Then: ska resultatskärmen visas
+- And: det ska stå att matchen blev oavgjord
+- And: spelaren ska kunna välja huvudmeny
+- And: spelaren ska kunna starta ett nytt parti
+```
