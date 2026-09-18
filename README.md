@@ -10,10 +10,6 @@ Repositoryt innehåller projekets dokumentation men även övriga filer som anv�
 * [Användningsfall](#användningsfall)
 * [Test Cases](#test-cases)
 * [UML och modeller](#uml-och-modeller)
-* [User Journey](#user-journey)
-* [Begreppslista för hela projektet](#begreppslista-för-hela-projektet)
-* [Business Rules](#business-rules)
-* [Kundintervju och icke-funktionella krav](#kundintervju-och-icke-funktionella-krav)
 * [Utvecklingsprocess](#utvecklingsprocess)
 * [Projektstruktur](#projektstruktur)
 
