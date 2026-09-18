@@ -19,82 +19,6 @@
 | UC-10 | Se matchresultat | GU, RU | GU, RU, AI | FR-10.1, FR-10.2, FR-10.3, FR-10.4, FR-10.5, FR-10.6, FR-10.7, FR-11.1, FR-11.2, FR-11.3, FR-11.4, FR-11.5 |
 | UC-12 | Spela på samma plan som vän | GU, RU | GU, RU | FR-07.1, FR-07.2, FR-07.3, FR-07.4 |
 
-## 7.2.1 Starta en match
-
-```mermaid
-sequenceDiagram
-    actor Player as Spelare
-    participant GameSystem as Spelsystem
-    participant AIOpponent as AI Motståndare
-    participant GameBoard as Spelplan
-
-    Player->>GameSystem: Välj att starta nytt spel
-    GameSystem->>Player: Visa alternativ (mot dator/människa)
-    Player->>GameSystem: Välj motståndare
-    GameSystem->>GameSystem: Skapa ny match
-    GameSystem->>GameBoard: Initiera tom spelplan
-    GameBoard->>GameSystem: Spelplan redo
-    GameSystem->>GameSystem: Bestäm första spelare
-    GameSystem->>Player: Visa spelplan och turordning
-
-    Note over Player,GameSystem: Match startad och redo för första drag
-```
-
-### 7.2.2 Spel mot datorn
-
-```mermaid
-sequenceDiagram
-    participant Player as Spelare
-    participant System as Gomoku System
-    participant AIOpponent as AI Motståndare
-
-    Player->>System: Väljer spela mot dator från startsida
-    System->>Player: Visar svårighetsgradsmeny
-    Player->>System: Väljer svårighetsgrad
-    System->>System: Initierar nytt spel
-    System->>Player: Visar spelplan
-    
-    loop Spel pågår
-        Player->>System: Gör ett drag
-        System->>System: Validerar drag
-        System->>Player: Uppdaterar spelplan
-        System->>System: Kontrollerar vinnare/oavgjort
-        
-        alt Spel slut
-            System->>Player: Visar resultat
-        else Spel fortsätter
-            System->>AIOpponent: Begär AI drag
-            AIOpponent->>System: Returnerar AI drag
-            System->>Player: Uppdaterar spelplan med AI drag
-            System->>System: Kontrollerar vinnare/oavgjort
-        end
-    end
-    
-    System->>Player: Visar slutresultat (vinnare/oavgjort)
-```
-
-### 7.2.3 Bjud in vän via länk
-
-```mermaid
-sequenceDiagram
-    actor Spelare
-    participant System
-    participant Vän
-
-    Spelare->>System: Starta Gomoku-match
-    System->>System: Generera inbjudningslänk
-    System-->>Spelare: Visa länk
-    Spelare->>Spelare: Kopiera länk
-    Spelare->>Vän: Skicka länk (externt)
-    Vän-->>System: Klicka på länk
-    System->>System: Validera länk och skapa spelomgång
-    System-->>Vän: Gå med i match (ingen konto krävs)
-    Vän->>System: Delta i spelet
-    System-->>Spelare: Vän har anslutit
-
-    Note over Spelare,System: Inga personuppgifter samlas in<br/>Inget konto krävs<br/>GDPR-efterlevnad (minimering av data)
-```
-
 ## 7.3 Kompletterande Use Cases
 
 | UC-ID | Användningsfall namn | Primär aktör | Sekundär aktör | Relaterade CR (står som FR) |
@@ -104,51 +28,6 @@ sequenceDiagram
 | UC-05 | Hantera cookies | GU | finns ej | FR-05.1, FR-05.2, FR-05.3, FR-05.4, FR-05.5 |
 | UC-09 | Återuppta sparad match | GU, RU | GU, RU, AI | FR-09.1, FR-09.2 |
 | UC-11 | Fortsätta efter internetavbrott | GU, RU | GU, RU, AI | FR-08.1, FR-08.2 |
-
-### 7.3.1 Välja svårighetsgrad
-
-```mermaid
-flowchart LR
-
-    Spelare([Spelare])
-
-    subgraph GomokuSystem["Gomoku System"]
-        UC03(["UC-03<br/>Välja svårighetsgrad<br/>mot en dator"])
-
-        Note["Svårighetsgrader:<br/>- Lätt<br/>- Medel<br/>- Svår"]
-    end
-
-    Spelare --> UC03
-    UC03 --- Note
-```
-
-### 7.3.2 Spela anonymt
-
-```mermaid
-flowchart LR
-
-    Spelare([Guest spelare])
-
-    subgraph GomokuSystem["Gomoku System"]
-        UC04(["UC-04<br/>Spela anonymt utan konto"])
-    end
-
-    Spelare --> UC04
-```
-
-### 7.3.3 Användaren hanterar cookies
-
-```mermaid
-flowchart LR
-
-    Spelare([Spelare])
-
-    subgraph GomokuSystem["Gomoku System"]
-        UC05(["UC-05<br/>Användaren hanterar cookies"])
-    end
-
-    Spelare --> UC05
-```
 
 ## 7.4 Icke-funktionella Use Cases
 
