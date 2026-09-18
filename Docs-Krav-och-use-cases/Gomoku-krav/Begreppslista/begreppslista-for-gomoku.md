@@ -1,6 +1,5 @@
 # Begreppslista
 
-Denna begreppslista visar alla domän och tekniska termer som används i kravspecifikationen. 
 
 | De olika termerna | Definitionen av dem |
 |---|---|
