@@ -51,5 +51,4 @@
 |-----------|-----------|
 | Högst prioritet | UC-01, UC-02, UC-05, UC-06, UC-07, UC-10, UC-12  |
 | Medelhög prioritet | UC-03, UC-04, UC-09, UC-11 |
-| Lägre prioritet |  |
 
