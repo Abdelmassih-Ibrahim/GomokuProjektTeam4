@@ -2,7 +2,7 @@
 
 ## User Story
 
-Som en spelare vill jag spela Gomoku mot en motståndare så att en av oss får fem i rad eller tills spelet slutar i oavgjort.
+Som en användare vill jag spela Gomoku mot en motståndare så att en av oss får fem i rad eller tills spelet slutar i oavgjort.
 
 ---
 
